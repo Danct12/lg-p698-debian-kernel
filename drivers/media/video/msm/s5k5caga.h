@@ -21,6 +21,7 @@
 
 #include <linux/types.h>
 #include <mach/camera.h>
+#include "msm.h"
 
 extern struct lgcam_rear_sensor_reg lgcam_rear_sensor_regs;
 extern int mclk_rate;
