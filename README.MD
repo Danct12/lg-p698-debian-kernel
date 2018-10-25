@@ -37,7 +37,8 @@ Enter the android shell and make a blank folder in /data, then look in /dev for 
 
 Run this command after you have done them.
 
-```export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
+```
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 export TERM=linux
 export HOME=/root
 export USER=root
@@ -46,7 +47,8 @@ export LC_ALL=C
 export LANGUAGE=C
 export LANG=C
 cd /debootstrap
-./debootstrap --second-stage```
+./debootstrap --second-stage
+```
 
 This will run the second stage of debootstrap, which finish the installation.
 
