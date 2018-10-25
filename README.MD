@@ -66,7 +66,11 @@ Make sure you have your SD Card inserted this time!
 
 After compile the kernel set INSTALL_MOD_PATH to /mnt (or the full path to the blank folder), this will install the module files into your SD Card once you type `make modules_install`
 
-And after you have finished, back to your chroot session and run mkinitramfs –o /boot/initrd.img.gz `ls /lib/modules`
+And after you have finished, back to your chroot session and run 
+
+```
+mkinitramfs –o /boot/initrd.img.gz `ls /lib/modules`
+```
 
 This command will finally create the moment of truth, initramfs.
 
@@ -96,6 +100,7 @@ If you have FBCon enabled you'll be able to see some lines going down and down. 
 
 --------------------------------------------------------
 
+```
 	Linux kernel release 2.6.xx <http://kernel.org/>
 
 These are the release notes for Linux version 2.6.  Read them carefully,
@@ -470,4 +475,4 @@ IF SOMETHING GOES WRONG:
 
    gdb'ing a non-running kernel currently fails because gdb (wrongly)
    disregards the starting offset for which the kernel is compiled.
-
+```
